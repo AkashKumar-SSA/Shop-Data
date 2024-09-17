@@ -7,12 +7,12 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class ShopAdapter(val shopData: ArrayList<ShopDetails>) :
+class ShopAdapter(private val shopData: ArrayList<ShopDetails>) :
     RecyclerView.Adapter<ShopAdapter.ViewHolder>() {
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val shopImage = itemView.findViewById<ImageView>(R.id.shopImage_ImageView)
-        val shopName = itemView.findViewById<TextView>(R.id.shopName_TextView)
-        val shopDistance: TextView = itemView.findViewById<TextView>(R.id.shopDistance_TextView)
+        val shopImage: ImageView = itemView.findViewById(R.id.shopImage_ImageView)
+        val shopName: TextView = itemView.findViewById(R.id.shopName_TextView)
+        val shopDistance: TextView = itemView.findViewById(R.id.shopDistance_TextView)
         val shopOwner: TextView = itemView.findViewById(R.id.shopOwnerName_TextView)
         val shopLocation: TextView = itemView.findViewById(R.id.shopAddress_TextView)
         val shopRating: TextView = itemView.findViewById(R.id.shopRating_TextView)

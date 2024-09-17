@@ -2,7 +2,6 @@ package com.example.shopdata
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.EditText
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -36,22 +35,22 @@ class ShopRegistration : AppCompatActivity() {
             val shopAddress: String = binding.shopAddressInput.text.toString()
             val shopRating: String = binding.shopRatingInput.text.toString()
 
-//            if (shopNameInput.isNotEmpty() && shopOwnerName.isNotEmpty() && shopDistance.isNotEmpty() &&
-//                shopAddress.isNotEmpty() && shopRating.isNotEmpty()){
-//                val shopUploadDataList: ArrayList<ShopDetails> = ArrayList()
-//                shopUploadDataList.add(ShopDetails(R.drawable.shop1,shopNameInput,shopDistance,shopOwnerName,shopAddress,shopRating))
-//                databaseReference.child(shopUploadDataList[0].shopName).setValue(shopUploadDataList[0])
-//                    .addOnSuccessListener {
-//                        Toast.makeText(this,"Uploaded Successfully",Toast.LENGTH_SHORT).show()
-//                        startActivity(Intent(this,MainActivity::class.java))
-//
-//                    }
-//                    .addOnFailureListener{
-//                        Toast.makeText(this,"Failed to save",Toast.LENGTH_SHORT).show()
-//                    }
-//
-//            }else
-//                Toast.makeText(this,"Fields can not be Empty",Toast.LENGTH_SHORT).show()
+            if (shopNameInput.isNotEmpty() && shopOwnerName.isNotEmpty() && shopDistance.isNotEmpty() &&
+                shopAddress.isNotEmpty() && shopRating.isNotEmpty()){
+                val shopUploadDataList: ArrayList<ShopDetails> = ArrayList()
+                shopUploadDataList.add(ShopDetails(R.drawable.shop1,shopNameInput,shopDistance,shopOwnerName,shopAddress,shopRating))
+                databaseReference.child(shopUploadDataList[0].shopName).setValue(shopUploadDataList[0])
+                    .addOnSuccessListener {
+                        Toast.makeText(this,"Uploaded Successfully",Toast.LENGTH_SHORT).show()
+                        startActivity(Intent(this,MainActivity::class.java))
+
+                    }
+                    .addOnFailureListener{
+                        Toast.makeText(this,"Failed to save",Toast.LENGTH_SHORT).show()
+                    }
+
+            }else
+                Toast.makeText(this,"Fields can not be Empty",Toast.LENGTH_SHORT).show()
 
         }
     }

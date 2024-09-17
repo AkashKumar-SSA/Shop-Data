@@ -6,4 +6,6 @@ data class ShopDetails(
     val shopDistance: String = "0.0",
     val shopOwnerName: String =  "",
     val shopAddress: String =  "",
-    val shopRating: String =  ""){}
+    val shopRating: String =  ""){
+
+}
