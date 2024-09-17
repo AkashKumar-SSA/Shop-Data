@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "719520421261",
+    "project_id": "shopdata-19e8d",
+    "storage_bucket": "shopdata-19e8d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:719520421261:android:eda683a29b171dc61d59c4",
+        "android_client_info": {
+          "package_name": "com.example.shopdata"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD17FThfCUc27PnyEfMpJueRXB5tJf-Fuw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
